@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Aliyuu Osman — Web Developer & Designer</title>
   <meta name="description" content="Ali Osman - Web Developer & Designer. Portfolio casri ah oo leh HTML, CSS, JavaScript iyo UI/UX." />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ef4444'/%3E%3Cstop offset='1' stop-color='%2322c55e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='46' font-weight='bold' fill='white' text-anchor='middle'%3EAO%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%233b82f6'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-family='Arial' font-size='46' font-weight='bold' fill='white' text-anchor='middle'%3EAO%3C/text%3E%3C/svg%3E" />
   <style>
     * {
       margin: 0;
@@ -15,18 +15,18 @@
     }
 
     :root {
-      --bg: #0a0f0d;
-      --bg-2: #0d1411;
+      --bg: #0a0f1a;
+      --bg-2: #0d1424;
       --card: rgba(255, 255, 255, 0.04);
       --card-border: rgba(255, 255, 255, 0.08);
-      --text: #e8f0ec;
-      --muted: #8fa89a;
-      --red: #ef4444;
-      --red-2: #f87171;
-      --green: #22c55e;
-      --green-2: #4ade80;
-      --red-glow: rgba(239, 68, 68, 0.35);
-      --green-glow: rgba(34, 197, 94, 0.35);
+      --text: #e8f0fe;
+      --muted: #8fa8c8;
+      --blue: #3b82f6;
+      --blue-2: #60a5fa;
+      --cyan: #06b6d4;
+      --cyan-2: #22d3ee;
+      --blue-glow: rgba(59, 130, 246, 0.35);
+      --cyan-glow: rgba(6, 182, 212, 0.35);
     }
 
     html { scroll-behavior: smooth; }
@@ -39,17 +39,17 @@
       position: relative;
     }
 
-    /* ===== Aurora background ===== */
+    /* ===== Aurora background (blue/cyan) ===== */
     body::before {
       content: '';
       position: fixed;
       inset: 0;
       z-index: -2;
       background:
-        radial-gradient(ellipse at 10% 10%, rgba(239, 68, 68, 0.22), transparent 45%),
-        radial-gradient(ellipse at 90% 10%, rgba(34, 197, 94, 0.22), transparent 45%),
-        radial-gradient(ellipse at 50% 100%, rgba(239, 68, 68, 0.15), transparent 50%),
-        radial-gradient(ellipse at 50% 50%, rgba(34, 197, 94, 0.08), transparent 60%);
+        radial-gradient(ellipse at 10% 10%, rgba(59, 130, 246, 0.22), transparent 45%),
+        radial-gradient(ellipse at 90% 10%, rgba(6, 182, 212, 0.22), transparent 45%),
+        radial-gradient(ellipse at 50% 100%, rgba(59, 130, 246, 0.15), transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(6, 182, 212, 0.08), transparent 60%);
       animation: aurora 20s ease-in-out infinite alternate;
     }
 
@@ -99,7 +99,7 @@
       width: 44px;
       height: 44px;
       border-radius: 14px;
-      filter: drop-shadow(0 0 16px var(--red-glow)) drop-shadow(0 0 16px var(--green-glow));
+      filter: drop-shadow(0 0 16px var(--blue-glow)) drop-shadow(0 0 16px var(--cyan-glow));
       transition: 0.4s;
     }
 
@@ -111,7 +111,7 @@
       font-weight: 800;
       font-size: 1.15rem;
       letter-spacing: -0.01em;
-      background: linear-gradient(90deg, var(--red-2), var(--green-2));
+      background: linear-gradient(90deg, var(--blue-2), var(--cyan-2));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
@@ -134,11 +134,11 @@
       left: 0;
       width: 0;
       height: 2px;
-      background: linear-gradient(90deg, var(--red), var(--green));
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
       transition: 0.3s;
     }
 
-    .nav-links a:hover { color: #e8f0ec; }
+    .nav-links a:hover { color: #e8f0fe; }
     .nav-links a:hover::after { width: 100%; }
 
     /* ===== Hero split ===== */
@@ -156,7 +156,7 @@
       letter-spacing: -0.03em;
       line-height: 1.1;
       margin-bottom: 16px;
-      background: linear-gradient(120deg, var(--red-2) 0%, #f5f5f5 40%, var(--green-2) 100%);
+      background: linear-gradient(120deg, var(--blue-2) 0%, #f5f5f5 40%, var(--cyan-2) 100%);
       background-size: 200% auto;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -190,9 +190,9 @@
       gap: 8px;
       padding: 8px 18px;
       border-radius: 999px;
-      background: rgba(34, 197, 94, 0.1);
-      border: 1px solid rgba(34, 197, 94, 0.35);
-      color: var(--green-2);
+      background: rgba(6, 182, 212, 0.1);
+      border: 1px solid rgba(6, 182, 212, 0.35);
+      color: var(--cyan-2);
       font-size: 0.85rem;
       font-weight: 500;
       margin-bottom: 24px;
@@ -203,8 +203,8 @@
       width: 8px;
       height: 8px;
       border-radius: 50%;
-      background: var(--green-2);
-      box-shadow: 0 0 10px var(--green-2);
+      background: var(--cyan-2);
+      box-shadow: 0 0 10px var(--cyan-2);
       animation: blink 1.5s ease-in-out infinite;
     }
 
@@ -233,14 +233,14 @@
     }
 
     .btn-primary {
-      background: linear-gradient(135deg, var(--red), var(--green));
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
       color: white;
-      box-shadow: 0 10px 30px rgba(239, 68, 68, 0.25);
+      box-shadow: 0 10px 30px rgba(59, 130, 246, 0.25);
     }
 
     .btn-primary:hover {
       transform: translateY(-3px);
-      box-shadow: 0 16px 40px rgba(34, 197, 94, 0.35);
+      box-shadow: 0 16px 40px rgba(6, 182, 212, 0.35);
     }
 
     .btn-ghost {
@@ -250,7 +250,7 @@
     }
 
     .btn-ghost:hover {
-      border-color: rgba(34, 197, 94, 0.4);
+      border-color: rgba(6, 182, 212, 0.4);
       transform: translateY(-3px);
     }
 
@@ -275,7 +275,7 @@
 
     .hero-orb::before {
       inset: 0;
-      background: conic-gradient(from 0deg, var(--red), transparent 30%, var(--green), transparent 70%, var(--red));
+      background: conic-gradient(from 0deg, var(--blue), transparent 30%, var(--cyan), transparent 70%, var(--blue));
       animation: spin 8s linear infinite;
       opacity: 0.6;
     }
@@ -296,7 +296,7 @@
       width: 150px;
       height: 150px;
       border-radius: 36px;
-      filter: drop-shadow(0 0 30px var(--red-glow)) drop-shadow(0 0 30px var(--green-glow));
+      filter: drop-shadow(0 0 30px var(--blue-glow)) drop-shadow(0 0 30px var(--cyan-glow));
       animation: float 4s ease-in-out infinite;
     }
 
@@ -329,15 +329,15 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, rgba(239,68,68,0.08), rgba(34,197,94,0.08));
+      background: linear-gradient(135deg, rgba(59,130,246,0.08), rgba(6,182,212,0.08));
       opacity: 0;
       transition: 0.35s;
     }
 
     .stat:hover {
       transform: translateY(-5px);
-      border-color: rgba(34, 197, 94, 0.4);
-      box-shadow: 0 16px 36px rgba(34, 197, 94, 0.12);
+      border-color: rgba(6, 182, 212, 0.4);
+      box-shadow: 0 16px 36px rgba(6, 182, 212, 0.12);
     }
 
     .stat:hover::before { opacity: 1; }
@@ -345,7 +345,7 @@
     .stat .num {
       font-size: 1.7rem;
       font-weight: 800;
-      background: linear-gradient(90deg, var(--red-2), var(--green-2));
+      background: linear-gradient(90deg, var(--blue-2), var(--cyan-2));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       position: relative;
@@ -374,7 +374,7 @@
     h2 {
       font-size: 1.5rem;
       margin-bottom: 26px;
-      color: #e8f0ec;
+      color: #e8f0fe;
       display: flex;
       align-items: center;
       gap: 12px;
@@ -385,8 +385,8 @@
       width: 5px;
       height: 26px;
       border-radius: 4px;
-      background: linear-gradient(180deg, var(--red), var(--green));
-      box-shadow: 0 0 14px var(--green-glow);
+      background: linear-gradient(180deg, var(--blue), var(--cyan));
+      box-shadow: 0 0 14px var(--cyan-glow);
     }
 
     /* ===== Glass card ===== */
@@ -402,12 +402,12 @@
     }
 
     .glass:hover {
-      border-color: rgba(34, 197, 94, 0.35);
+      border-color: rgba(6, 182, 212, 0.35);
       transform: translateY(-3px);
-      box-shadow: 0 22px 50px rgba(239, 68, 68, 0.1), 0 22px 50px rgba(34, 197, 94, 0.1);
+      box-shadow: 0 22px 50px rgba(59, 130, 246, 0.1), 0 22px 50px rgba(6, 182, 212, 0.1);
     }
 
-    .about p { color: #c4d4cb; font-size: 1rem; }
+    .about p { color: #c4d4e8; font-size: 1rem; }
     .about p + p { margin-top: 14px; }
 
     /* ===== Info grid ===== */
@@ -431,7 +431,7 @@
     }
 
     .info-item:hover {
-      border-color: rgba(239, 68, 68, 0.35);
+      border-color: rgba(59, 130, 246, 0.35);
       transform: translateX(5px);
     }
 
@@ -442,8 +442,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: linear-gradient(135deg, rgba(239,68,68,0.18), rgba(34,197,94,0.18));
-      border: 1px solid rgba(34, 197, 94, 0.25);
+      background: linear-gradient(135deg, rgba(59,130,246,0.18), rgba(6,182,212,0.18));
+      border: 1px solid rgba(6, 182, 212, 0.25);
       font-size: 1.15rem;
       flex-shrink: 0;
     }
@@ -451,14 +451,14 @@
     .info-item .txt small {
       display: block;
       font-size: 0.7rem;
-      color: #6b8578;
+      color: #6b85a8;
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
 
     .info-item .txt strong {
       font-size: 0.9rem;
-      color: #e8f0ec;
+      color: #e8f0fe;
       font-weight: 600;
     }
 
@@ -485,15 +485,15 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--red), var(--green));
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
       opacity: 0;
       transition: 0.35s;
     }
 
     .service:hover {
       transform: translateY(-7px);
-      border-color: rgba(34, 197, 94, 0.4);
-      box-shadow: 0 24px 50px rgba(239, 68, 68, 0.1);
+      border-color: rgba(6, 182, 212, 0.4);
+      box-shadow: 0 24px 50px rgba(59, 130, 246, 0.1);
     }
 
     .service:hover::before { opacity: 1; }
@@ -506,9 +506,9 @@
       align-items: center;
       justify-content: center;
       font-size: 1.4rem;
-      background: linear-gradient(135deg, var(--red), var(--green));
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
       margin-bottom: 16px;
-      box-shadow: 0 8px 24px rgba(239, 68, 68, 0.25);
+      box-shadow: 0 8px 24px rgba(59, 130, 246, 0.25);
     }
 
     .service h3 { font-size: 1.05rem; margin-bottom: 6px; }
@@ -527,7 +527,7 @@
       border-radius: 12px;
       font-size: 0.9rem;
       font-weight: 500;
-      color: #c4d4cb;
+      color: #c4d4e8;
       border: 1px solid var(--card-border);
       backdrop-filter: blur(10px);
       transition: 0.3s;
@@ -540,7 +540,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: linear-gradient(135deg, var(--red), var(--green));
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
       opacity: 0;
       transition: 0.3s;
       z-index: -1;
@@ -550,7 +550,7 @@
       color: white;
       border-color: transparent;
       transform: translateY(-4px) scale(1.05);
-      box-shadow: 0 14px 30px rgba(34, 197, 94, 0.3);
+      box-shadow: 0 14px 30px rgba(6, 182, 212, 0.3);
     }
 
     .skill:hover::before { opacity: 1; }
@@ -578,7 +578,7 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, var(--red), var(--green), var(--red));
+      background: linear-gradient(90deg, var(--blue), var(--cyan), var(--blue));
       background-size: 200% auto;
       opacity: 0;
       transition: 0.35s;
@@ -587,13 +587,13 @@
 
     .project:hover {
       transform: translateY(-9px);
-      border-color: rgba(34, 197, 94, 0.4);
-      box-shadow: 0 26px 55px rgba(239, 68, 68, 0.12), 0 26px 55px rgba(34, 197, 94, 0.12);
+      border-color: rgba(6, 182, 212, 0.4);
+      box-shadow: 0 26px 55px rgba(59, 130, 246, 0.12), 0 26px 55px rgba(6, 182, 212, 0.12);
     }
 
     .project:hover::before { opacity: 1; }
 
-    .project h3 { font-size: 1.12rem; margin-bottom: 10px; color: #f1f7f3; }
+    .project h3 { font-size: 1.12rem; margin-bottom: 10px; color: #f1f7ff; }
     .project p { font-size: 0.9rem; color: var(--muted); }
 
     .project .tag {
@@ -605,15 +605,15 @@
       font-weight: 600;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      background: rgba(239, 68, 68, 0.1);
-      border: 1px solid rgba(239, 68, 68, 0.3);
-      color: var(--red-2);
+      background: rgba(59, 130, 246, 0.1);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: var(--blue-2);
     }
 
     .project:nth-child(2) .tag {
-      background: rgba(34, 197, 94, 0.1);
-      border-color: rgba(34, 197, 94, 0.3);
-      color: var(--green-2);
+      background: rgba(6, 182, 212, 0.1);
+      border-color: rgba(6, 182, 212, 0.3);
+      color: var(--cyan-2);
     }
 
     /* ===== Contact ===== */
@@ -632,7 +632,7 @@
       gap: 8px;
       padding: 13px 26px;
       background: var(--card);
-      color: #c4d4cb;
+      color: #c4d4e8;
       text-decoration: none;
       border-radius: 14px;
       border: 1px solid var(--card-border);
@@ -642,11 +642,11 @@
     }
 
     .contact a:hover {
-      background: linear-gradient(135deg, var(--red), var(--green));
+      background: linear-gradient(135deg, var(--blue), var(--cyan));
       color: white;
       border-color: transparent;
       transform: translateY(-3px);
-      box-shadow: 0 16px 34px rgba(34, 197, 94, 0.35);
+      box-shadow: 0 16px 34px rgba(6, 182, 212, 0.35);
     }
 
     /* ===== Footer ===== */
@@ -655,7 +655,7 @@
       margin-top: 80px;
       padding-top: 28px;
       border-top: 1px solid rgba(255, 255, 255, 0.06);
-      color: #6b8578;
+      color: #6b85a8;
       font-size: 0.85rem;
     }
 
@@ -664,7 +664,7 @@
       align-items: center;
       gap: 8px;
       margin-bottom: 10px;
-      color: #8fa89a;
+      color: #8fa8c8;
       font-weight: 600;
     }
 
@@ -712,8 +712,8 @@
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#ef4444"/>
-              <stop offset="1" stop-color="#22c55e"/>
+              <stop offset="0" stop-color="#3b82f6"/>
+              <stop offset="1" stop-color="#06b6d4"/>
             </linearGradient>
           </defs>
           <rect width="100" height="100" rx="24" fill="url(#logoGrad)"/>
@@ -752,8 +752,8 @@
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#ef4444"/>
-              <stop offset="1" stop-color="#22c55e"/>
+              <stop offset="0" stop-color="#3b82f6"/>
+              <stop offset="1" stop-color="#06b6d4"/>
             </linearGradient>
           </defs>
           <rect width="100" height="100" rx="24" fill="url(#heroGrad)"/>
@@ -906,10 +906,36 @@
         <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient id="footGrad" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0" stop-color="#ef4444"/>
-              <stop offset="1" stop-color="#22c55e"/>
+              <stop offset="0" stop-color="#3b82f6"/>
+              <stop offset="1" stop-color="#06b6d4"/>
             </linearGradient>
           </defs>
           <rect width="100" height="100" rx="24" fill="url(#footGrad)"/>
           <text x="50" y="68" font-family="Arial, sans-serif" font-size="46"
-                font-weight="
+                font-weight="bold" fill="white" text-anchor="middle">AO</text>
+        </svg>
+        <span>Ali Osman</span>
+      </div>
+      <p>© 2025 Ali Osman. Dhammaan xuquuqda way dhowran yihiin.</p>
+    </footer>
+
+  </div>
+
+  <script>
+    // Reveal on scroll
+    const revealElements = document.querySelectorAll('.reveal');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
